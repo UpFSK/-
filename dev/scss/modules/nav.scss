@@ -1,0 +1,20 @@
+.nav__list {
+  font-size: 0px;
+}
+
+.nav__item {
+  @include inline-block();
+
+  margin-right: 40px;
+}
+
+.nav__link {
+  color: $white;
+  font-size: 16px;
+  font-family: $font-Roboto-Bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

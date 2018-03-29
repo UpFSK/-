@@ -1,0 +1,56 @@
+@mixin centered($axis: 'both') {
+  position: absolute;
+
+  @if $axis == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == 'x' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if $axis == 'y' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin inline-block($vars: middle) {
+  display: inline-block;
+  vertical-align: $vars;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1200px){ //desctop
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 920px){ //laptop
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 760px){ //tablet
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 480px){ //phone
+    @content;
+  }
+}

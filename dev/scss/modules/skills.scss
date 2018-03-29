@@ -1,0 +1,31 @@
+
+
+.skill-section__title {
+  font-family: $font-Roboto-Med;
+  font-size: 28px;
+  color: $gray;
+
+  margin-bottom: 20px;
+}
+
+.skill-section__list {
+  margin-bottom: 40px;
+}
+
+.skills-section__item {
+  display: inline-block;
+  margin-right: 40px;
+
+  .skill {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.skill__name {
+  font-family: $font-Roboto-Med;
+  color: $green;
+
+  @include centered();
+}

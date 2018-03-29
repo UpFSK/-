@@ -1,0 +1,37 @@
+include mixins/_mixins
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+        block title
+            title Главная страничка
+
+        link(rel="shortcut icon" href="./img/favicon.png")
+
+        link(rel="stylesheet" type='text/css' href="./css/foundation.css")
+        link(rel="stylesheet" type='text/css' href="./css/main.css")
+
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+
+    body
+
+        block menu-full
+            include modules/menu-full
+
+        .wrapper
+            block header
+            //include modules/header
+
+            block content
+
+        block footer
+        //include modules/footer
+
+
+        script(src="./js/foundation.js")
+        script(src="./js/main.js")
+        block script

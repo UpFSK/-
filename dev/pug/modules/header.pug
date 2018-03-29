@@ -1,0 +1,33 @@
+header.header.grid
+    ul.social.header__social
+        each social in ['vk', 'github', 'in']
+            li.social__item
+                a(href="#" class=`social__link_${social}`).social__link= social
+                    +icon(social)
+
+    .hamburgers.header__hamburgers
+        a(href="#").hamburgers__link
+            +icon('hamburger')
+
+    .bg-text-portfolio.header__bg-text-portfolio
+        +icon('portfolio_header')
+
+
+    .user.header__user
+        .user__photo
+            img(src=`${content.user.myPhoto}`).user__my-photo
+        .user__name= content.user.name
+        .user__description= content.user.desc
+
+    .arrow-down.header__arrow-down
+        a(href="#").arrow-down__link
+            +icon('arrow_down')
+
+
+    .triangle.header__triangle.grid
+        .triangles.triangles_fill_green
+            svg(viewBox="0 0 1000 190")
+                polygon(points="0,0 0,190 1000,190")
+        .triangles.triangles_fill_white
+            svg(viewBox="0 0 1000 190")
+                polygon(points="1000,0 1000,190 0,190")

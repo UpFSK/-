@@ -1,0 +1,27 @@
+/*
+.about {
+  position: relative;
+  @extend %clearfix;
+}
+*/
+
+.about {
+  min-height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+
+  
+  &__left {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $left;
+
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__right {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $right;
+  }
+}
+

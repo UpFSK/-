@@ -1,0 +1,53 @@
+.footer {
+  @extend %clearfix;
+  position: absolute;
+  width: 100%;
+
+  margin-top: -$height-footer;
+  background: rgba($dark-gray, .85);
+
+  &__left, &__center, &__right {
+    padding: 30px;
+    width: 33.3%;
+    float: left;
+  }
+
+  &__center {
+    position: relative;
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      height: 90px;
+      width: 1px;
+      background: #69716e;
+    }
+
+    &::after {
+      right: 0px;
+      top: 30px;
+    }
+
+    &::before {
+      left: 0px;
+    }
+  }
+}
+
+.footer__description {
+  p {
+    color: $white;
+  }
+}
+
+.footer__nav {
+  margin-bottom: 40px;
+}
+
+.social.footer__social {
+  .icon {
+    fill: rgba($white, .5);
+    &:hover {
+      fill: $white;
+    }
+  }
+}

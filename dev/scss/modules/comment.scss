@@ -1,0 +1,30 @@
+.comment__text {
+  p {
+    font-family: $font-Roboto-LightItalic;
+    color: rgba($white, .5);
+  }
+
+  margin-bottom: 15px;
+}
+
+.comment__author {
+  font-family: $font-Roboto-BoldItalic;
+  color: rgba($white, .5);
+
+  padding-left: 25px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 10px;
+    height: 2px;
+
+    background: rgba($white, .5);
+  }
+}

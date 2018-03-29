@@ -1,0 +1,25 @@
+footer.footer
+    .footer__left
+        .footer__description
+            p= content.footer.desc
+
+    .footer__center
+        nav.nav.footer__nav
+            ul.nav__list
+                each nameHref, name in content.footer.nav
+                    li.nav__item
+                        a(href=`${nameHref}`).nav__link= name
+
+        ul.social.footer__social
+            each social in ['vk', 'github', 'in']
+                li.social__item
+                    a(href="#" class=`social__link_${social}`).social__link= social
+                        +icon(social)
+
+
+    .footer__right
+        .comment.footer__comment
+            .comment__text
+                p= content.footer.comment.text
+            .comment__author= content.footer.comment.author
+

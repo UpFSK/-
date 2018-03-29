@@ -1,0 +1,57 @@
+.svg-circle {
+  width: 100%;
+  height: 100%;
+
+  &__first {
+    fill: transparent;
+    stroke: #dfdcd5;
+  }
+
+  &__last {
+    fill: transparent;
+    stroke: #74a163;
+    stroke-dasharray: 20, 282.6;
+  }
+}
+
+.svg-circle__last_stroke-dasharray {
+  &_HTML5 {
+    stroke-dasharray: 260, 282.6;
+  }
+
+  &_CSS3 {
+    stroke-dasharray: 230, 282.6;
+  }
+
+  &_JavaScript {
+    stroke-dasharray: 190, 282.6;
+  }
+
+  &_PHP {
+    stroke-dasharray: 20, 282.6;
+  }
+
+  &_mqSQL {
+    stroke-dasharray: 40, 282.6;
+  }
+
+  &_Node {
+    stroke-dasharray: 250, 282.6;
+  }
+
+  &_Mobgo {
+    stroke-dasharray: 250, 282.6;
+  }
+
+  &_Git {
+    stroke-dasharray: 250, 282.6;
+  }
+
+  &_Gulp {
+    stroke-dasharray: 250, 282.6;
+  }
+
+  &_Bower {
+    stroke-dasharray: 250, 282.6;
+  }
+}

@@ -1,0 +1,46 @@
+.contacts {
+  width: 380px;
+  display: inline-block;
+  z-index: 2;
+  @include centered();
+
+  background: rgba($white, .85);
+  border-radius: 5px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contacts__title {
+  height: 60px;
+}
+
+.contacts__list {
+  padding-left: 75px;
+}
+
+.contacts__item {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    fill: $green;
+
+    position: absolute;
+    left: -40px;
+
+  }
+}
+
+.contacts__link {
+  font-family: $font-Roboto-Med;
+  text-decoration: none;
+  color: #455a64;
+}

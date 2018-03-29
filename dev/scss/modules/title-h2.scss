@@ -1,0 +1,26 @@
+.title-h2 {
+  position: relative;
+  margin-bottom: 40px;
+
+  &::after {
+    content: '';
+    width: 90px;
+    height: 3px;
+    background: $gray;
+
+    @include centered(x);
+    bottom: 0;
+  }
+}
+
+.title-h2__text {
+  text-align: center;
+}
+
+.title-h2__head {
+  font-family: $title-fonts;
+  font-size: $title-h2-size;
+  color: $gray;
+
+  text-transform: uppercase;
+}

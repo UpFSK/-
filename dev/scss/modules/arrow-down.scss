@@ -1,0 +1,21 @@
+.arrow-down {
+  width: 26px;
+  height: 16px;
+}
+
+.arrow-down__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  .icon {
+    fill: rgba($white, .7);
+
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      fill: $white;
+    }
+  }
+}

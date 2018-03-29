@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: $main-fonts-size;
+
+  @include laptop {
+    font-size: 15px;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include phone {
+    font-size: 13px;
+  }
+}
+
+body {
+  line-height: 1.42;
+  font-family: $main-fonts;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  //min-width: $container + 20px;
+}
+/*
+.wrapper:after {
+  content: "";
+  display: block;
+  height: $height-footer;
+  overflow: hidden;
+}
+*/
+/*
+.container {
+  width: $container;
+  margin: 0 auto;
+
+  @include laptop {
+    width: 750px;
+  }
+
+  @include tablet {
+    width: 480px;
+  }
+
+  @include phone {
+    width: 95%;
+  }
+}
+*/
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+footer {
+  background: #ccc;
+  height: $height-footer;
+  width: 100%;
+  margin-top: -$height-footer;
+  position: relative;
+  min-width: $container + 20px;
+}
+*/
+
+.grid {
+  display: grid;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}

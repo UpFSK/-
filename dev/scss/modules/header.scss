@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+
+  background: url("../img/bg/water.jpg");
+  background-size: cover;
+
+  //padding: 30px 30px 0px 30px;
+}
+
+.social.header__social {
+  padding: 30px 0px 0px 30px;
+  .icon {
+    &:hover {
+      fill: $light-green;
+    }
+  }
+}
+
+.header__hamburgers {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.header__user {
+  @include centered();
+}
+
+.header__bg-text-portfolio {
+  @include centered();
+}
+.header__arrow-down {
+  @include centered(x);
+  bottom: 70px;
+}
+/*
+.header__triangle {
+  position: absolute;
+  bottom: 190px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+}
+*/

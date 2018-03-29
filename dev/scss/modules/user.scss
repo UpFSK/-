@@ -1,0 +1,25 @@
+
+.user {
+  @include inline-block(top);
+  width: 350px;
+  text-align: center;
+}
+
+.user__photo {
+  width: 141px;
+  height: 141px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  margin: 0 auto;
+}
+
+.user__name {
+  font-family: $font-Roboto-Med;
+  font-size: 35px;
+  color: $white;
+}
+
+.user__description {
+  color: $white;
+}

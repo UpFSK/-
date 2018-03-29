@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+    ul.nav__list1
+        each href, nameLink in content.navIndex
+            li.nav__item1
+                a(href=`${href}`)= nameLink
