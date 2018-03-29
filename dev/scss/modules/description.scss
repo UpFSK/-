@@ -1,1 +1,18 @@
+.description {
+    text-align: center;
+}
 
+.description__photo {
+    @include inline-block();
+}
+
+.description__text {
+    p {
+        text-align: left;
+        color: $gray;
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+}

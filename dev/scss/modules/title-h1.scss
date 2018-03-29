@@ -1,0 +1,26 @@
+.title-h1 {
+    position: relative;
+    text-align: center;
+}
+
+.title-h1__bg {
+    display: inline-block;    
+}
+
+.title-h1__text {
+    @include centered();
+
+    h1 {
+        font-size: $title-h1-size;
+        font-family: $title-fonts;
+        color: $dark-gray;
+    }
+
+    &::after {
+        content: "";
+        @include centered(x);
+        width: 90px;
+        height: 2px;
+        background: $dark-gray;
+    }
+}

@@ -15,7 +15,7 @@
     padding-right: 20px;
     background: $left;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit ,minmax(450px, 1fr));
   }
 
   &__right {
@@ -25,3 +25,7 @@
   }
 }
 
+.about__title {
+  text-align: center;
+  height: 125px;
+}

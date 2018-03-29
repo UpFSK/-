@@ -51,7 +51,25 @@ block content
                                                 .skill__name= skillTitle
 
 
+    .about.grid
+        .about__left.grid
+            .title-h1.about__title
+                .title-h1__bg
+                    img(src=`${content.about.titleBg}`).img-responsive.title-h1__img
+                .title-h1__text
+                    h1= content.about.title
 
+            .description.about__description
+                .description__photo
+                    img(src=`${content.about.descPhoto}`).img-responsive.description__my-photo
+                .title-h2.description__title
+                    .title-h2__text
+                        h1.title-h2__head= content.about.descTitle
+                .description__text
+                    p= content.about.descP1
+                    p= content.about.descP2
+
+        .about__right
 
 
     .map#map

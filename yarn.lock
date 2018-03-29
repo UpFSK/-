@@ -5549,10 +5549,6 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-singularitygs@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/singularitygs/-/singularitygs-1.8.0.tgz#71593f6cd82524926e79606284d856dd87d8fefb"
-
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"

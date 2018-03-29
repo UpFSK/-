@@ -1,11 +1,12 @@
 .title-h2 {
   position: relative;
+  margin-top: 40px;
   margin-bottom: 40px;
 
   &::after {
     content: '';
     width: 90px;
-    height: 3px;
+    height: 2px;
     background: $gray;
 
     @include centered(x);
