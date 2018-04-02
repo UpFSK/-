@@ -20,4 +20,12 @@
 
 .triangles_fill_white {
   fill: $right;
+
+  @include tablet {
+    fill: $left;
+  }
+}
+
+.triangles_fill_blog {
+ fill: #faf8f0;
 }

@@ -5,26 +5,18 @@
   }
 
   margin-bottom: 15px;
+
+  @include phone {
+    text-align: center;
+  }
 }
 
 .comment__author {
   font-family: $font-Roboto-BoldItalic;
   color: rgba($white, .5);
 
-  padding-left: 25px;
 
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 10px;
-    height: 2px;
-
-    background: rgba($white, .5);
+  @include phone {
+    text-align: center;
   }
 }

@@ -1,8 +1,11 @@
-
 .user {
   @include inline-block(top);
   width: 350px;
   text-align: center;
+
+  @include phone {
+    width: 100%;
+  }
 }
 
 .user__photo {

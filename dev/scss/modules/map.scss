@@ -1,6 +1,19 @@
 .map {
-  width: 100%;
-  height: 1114px;
+  min-height: 100vh;
 
   position: relative;
+
+  @include phone {
+    height: 1000px;
+  }
+}
+
+.map__contacts {
+  @include centered();
+  margin-top: -$height-footer;
+
+  @include phone {
+    top: 0;
+    margin-top: 153px;
+  }
 }

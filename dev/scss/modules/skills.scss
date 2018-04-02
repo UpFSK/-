@@ -5,11 +5,22 @@
   font-size: 28px;
   color: $gray;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    text-align: center;
+  }
+
 }
 
 .skill-section__list {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+
+  @include desktop {
+    text-align: center;
+  }
+
 }
 
 .skills-section__item {
@@ -21,6 +32,11 @@
     width: 120px;
     height: 120px;
   }
+
+  @include laptop-l {
+    margin-right: 17px;
+  }
+
 }
 
 .skill__name {

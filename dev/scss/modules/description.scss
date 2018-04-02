@@ -1,9 +1,30 @@
 .description {
     text-align: center;
+
+    @include tablet {
+        padding-bottom: 40px;
+    }
 }
 
 .description__photo {
     @include inline-block();
+
+    margin-bottom: 40px;
+
+    width: 443px;
+    height: 390px;
+
+    overflow: hidden;
+
+    @include tablet {
+        width: 473px;
+        height: 416px;
+    }
+
+    @include phone {
+        width: 100%;
+        height: 283px;
+    }
 }
 
 .description__text {
@@ -14,5 +35,14 @@
         &:first-child {
             margin-bottom: 10px;
         }
+    }
+
+    @include tablet {
+        width: 473px;
+        margin: 0 auto;
+    }
+
+    @include phone {
+        width: 100%;
     }
 }

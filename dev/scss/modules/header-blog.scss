@@ -1,0 +1,15 @@
+#header-blog {
+  min-height: 600px;
+}
+
+.user-blog {
+  @include centered();
+}
+
+.header-blog__desc {
+  color: $white;
+
+  @include centered(x);
+
+  bottom: 70px;
+}

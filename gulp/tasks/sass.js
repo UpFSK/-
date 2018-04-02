@@ -13,7 +13,7 @@ module.exports = function() {
       /*
         .pipe(cssunit({
           type     :    'px-to-rem',
-          width    :    16
+          rootSize    :    16
       }))
       */
       .pipe($.gp.sourcemaps.write())

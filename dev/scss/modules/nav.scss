@@ -6,6 +6,15 @@
   @include inline-block();
 
   margin-right: 40px;
+
+  @include tablet {
+    margin-right: 16px;
+  }
+
+  @include phone {
+    text-align: center;
+  }
+
 }
 
 .nav__link {
@@ -16,5 +25,13 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include phone {
+    font-size: 13px;
   }
 }

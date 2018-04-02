@@ -1,15 +1,29 @@
 .footer {
-  @extend %clearfix;
   position: absolute;
   width: 100%;
 
   margin-top: -$height-footer;
+  height: $height-footer;
   background: rgba($dark-gray, .85);
 
   &__left, &__center, &__right {
     padding: 30px;
-    width: 33.3%;
-    float: left;
+
+    @include phone {
+      padding: 10px;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__right {
+    @include tablet {
+      padding-top: 0px;
+      grid-column: 1 / -1;
+    }
+
+    @include phone {
+      padding-top: 10px;
+    }
   }
 
   &__center {
@@ -31,16 +45,46 @@
       left: 0px;
     }
   }
+
+  grid-template-columns: repeat(3, 1fr);
+
+  @include desktop {
+    height: auto;
+    margin-top: -185px;
+  }
+
+  @include tablet {
+    margin-top: -243px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include phone {
+    width: 100%;
+    height: auto;
+    margin-top: -235px;
+  }
 }
 
 .footer__description {
   p {
     color: $white;
   }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include phone {
+    text-align: center;
+  }
 }
 
 .footer__nav {
   margin-bottom: 40px;
+
+  @include phone {
+    margin-bottom: 10px;
+  }
 }
 
 .social.footer__social {
@@ -49,5 +93,9 @@
     &:hover {
       fill: $white;
     }
+  }
+
+  @include phone {
+    text-align: center;
   }
 }

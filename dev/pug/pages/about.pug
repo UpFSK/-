@@ -70,10 +70,30 @@ block content
                     p= content.about.descP2
 
         .about__right
+            .skill
+                .title-h2.skill__title
+                    .title-h2__text
+                        h1.title-h2__head= content.skill.title
+                .skill__description
+                    p= content.skill.desc
+            ul.skills
+                each skill in content.skills
+                    each skillsArray, skillName in skill
+                        li.skills__item
+                            .skill-section
+                                .skill-section__title= skillName
+                                ul.skill-section__list
+                                    each skillTitle in skillsArray
+                                        li.skills-section__item
+                                            .skill
+                                                svg.svg-circle.skill__circle
+                                                    circle(r="45" cx="60" cy="60" stroke-width="20").svg-circle__first
+                                                    circle(r="45" cx="60" cy="60" stroke-width="20" transform="rotate(-90 60 60)" class=`svg-circle__last_stroke-dasharray_${skillTitle}`).svg-circle__last
+                                                .skill__name= skillTitle
 
 
     .map#map
-        .contacts
+        .contacts.map__contacts
             .title-h2.contacts__title
                 .title-h2__text
                     h1.title-h2__head= content.contacts.title

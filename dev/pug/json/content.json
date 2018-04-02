@@ -1,6 +1,7 @@
 {
   "navIndex": {
-    "About": "about.html"
+    "About": "about.html",
+    "Blog": "blog.html"
   },
   "user": {
     "myPhoto": "../img/my-user-photo.png",
@@ -25,7 +26,7 @@
     },
     "comment": {
       "text": "Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.",
-      "author": "Martin Golding"
+      "author": "- Martin Golding"
     }
   },
   "skill": {
@@ -49,5 +50,10 @@
     {"Frontend": ["HTML5", "CSS3", "JS"]},
     {"Backend": ["PHP", "mySQL", "Node", "Mongo"]},
     {"WorkFlow": ["Git", "Gulp", "Bower"]}
-  ]
+  ],
+
+  "blogHeader": {
+    "titleBg": "../img/title/blog_header.png",
+    "title": "Блог"
+  }
 }

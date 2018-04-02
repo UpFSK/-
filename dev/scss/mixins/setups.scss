@@ -8,12 +8,6 @@ body, html {
 }
 
 html {
-  font-size: $main-fonts-size;
-
-  @include laptop {
-    font-size: 15px;
-  }
-
   @include tablet {
     font-size: 14px;
   }

@@ -25,10 +25,18 @@
 
 .header__user {
   @include centered();
+
+  @include phone {
+    width: 100%;
+  }
 }
 
 .header__bg-text-portfolio {
   @include centered();
+
+  @include phone {
+    display: none;
+  }
 }
 .header__arrow-down {
   @include centered(x);

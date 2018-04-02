@@ -1,0 +1,52 @@
+extends ../layout
+
+block title
+    title Blog
+
+block header
+    header.header#header-blog.grid
+        ul.social.header__social
+            each social in ['vk', 'github', 'in']
+                li.social__item
+                    a(href="#" class=`social__link_${social}`).social__link= social
+                        +icon(social)
+
+        .hamburgers.header__hamburgers
+            a(href="#").hamburgers__link
+                +icon('hamburger')
+
+        .user-blog
+            .user__photo
+                img(src=`${content.user.myPhoto}`).user__my-photo
+            .title-h1
+                .title-h1__bg.title-h1__bg_position_top
+                    img(src=`${content.blogHeader.titleBg}`).img-responsive.title-h1__img
+                .title-h1__text.title-h1_after_bg_white
+                    h1.title-h1_color_white= content.blogHeader.title
+
+        .header-blog__desc Статьи, которые я написал
+
+
+        .triangle.header__triangle.grid
+            .triangles.triangles_fill_blog
+                svg(viewBox="0 0 1000 190")
+                    polygon(points="0,0 0,190 1000,190")
+            .triangles.triangles_fill_blog
+                svg(viewBox="0 0 1000 190")
+                    polygon(points="1000,0 1000,190 0,190")
+
+block content
+    .blog
+        aside.aside
+            ul.aside__list
+                li.aside__item
+                    a(href="#").aside__link Самое важное в SASS
+                li.aside__item
+                    a(href="#").aside__link Самое важное в SASS
+                li.aside__item
+                    a(href="#").aside__link Самое важное в SASS
+
+
+
+block footer
+    include ../modules/footer

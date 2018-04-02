@@ -37,6 +37,12 @@
   }
 }
 
+@mixin laptop-l {
+  @media (max-width: 1444px) { //laptop-l
+    @content;
+  }
+}
+
 @mixin laptop {
   @media (max-width: 920px){ //laptop
     @content;
@@ -44,7 +50,7 @@
 }
 
 @mixin tablet {
-  @media (max-width: 760px){ //tablet
+  @media (max-width: 768px){ //tablet
     @content;
   }
 }
